@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+/*Reset*/
+
+body{
+    background-color:  #fff2cc25;
+    color: #4c4c4c;
+    margin: auto;
+}
+
+nav .topnav{
+    width:100%;
+    background-color: white;
+    box-shadow:0px 1px 6px 2px #DCE1E7;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+ 
+}
+
+.topnav img{
+    height:38px;
+    padding-left: 20px;
+}
+
+.topnav a{
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 40px;
+}
+
+.btn{
+    background-color: #3E8AE3;
+    padding: 5px 25px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.btn:hover{
+    background: #3E8AE3;
+    opacity: 80%;
+}
+
+.btn a{
+    padding:0px;
+    color: white;
+    margin-left: 3px;
+    font-weight: lighter;
+}
+
+nav .lowernav{
+    width:100%;
+    background-color: rgba(84, 177, 120, 0.315);
+    box-shadow:0px 1px 6px 2px #DCE1E7;
+    height: 60px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+ 
+}
+
+.lowernav a{
+    color: #4c4c4c;
+    transition: all 300ms ease-in-out;
+}
+
+.lowernav a:hover{
+    color: white;
+}
+
+
+/* End of Nav */
+.heroBg{
+    background-color: #fff2cc91;
+    width:100%;
+    height: 80vh;
+    border-bottom: 7px dotted rgba(116, 34, 34, 0.61);
+}
+.hero{
+    width:50%;
+    margin: auto;
+    padding-top: 200px;
+    text-align: center;
+
+
+}
+
+.hero .herotext{
+    width:100%;
+    margin-bottom: 80px;
+}
+
+/*End of Hero*/
+
+.main{
+    padding-top: 50px;
+    width:80%;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    font-size: 60px;
+}
+
+.main .infographic{
+    width:100%;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+/* End of Main*/
+
+.showcase{
+    width:100%;
+    background-color: white;
+    height: 800px;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.showcase .container{
+    width: 80%;
+    margin: auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    height: 500px;
+    padding: 40px 0px;
+}
+
+.container .card{
+    display:flex;
+    flex-direction: column;
+    background-color:  #fff2cc88;
+    border-radius: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card p{
+    font-size: 50px;
+    font-weight:bold;
+}
+
+.card .btn{
+    margin:0;
+}
+
+/*End of Showcase*/
+
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(70, 117, 117);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    font-size: 20px;
+}

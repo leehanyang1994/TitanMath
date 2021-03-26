@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    position: relative;
+    background-color: #fef9e5;
+}
+
+.display_none {
+    display: none;
+}
+.opc0{
+    opacity: 0;
+    pointer-events: none;
+}
+.background1 {
+    background: url(../img/window2.jpg);
+    background-size: cover;
+    opacity: 0.3;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+}
+
+.logo{
+    background-image: url(../img/Logo.svg);
+    background-size: cover;
+    z-index: 100;
+    position: fixed;
+    width: 90px;
+    height: 34px;
+    top:93%;
+    left: 2.5%;
+
+}
+
+.background-img {
+    background-size: cover;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+}
+
+.background {
+    position: relative;
+}
+
+.showbox {
+    background: url(../img/box9.svg);
+    background-size: cover;
+    position: absolute;
+    top: 1.7%;
+    left: 1.8%;
+}
+
+
+
+.changeMoneyAreaBottom {
+    background: url(../img/box10.png);
+    background-size: cover;
+    position: absolute;
+    top: 1.7%;
+    left: 79.345%;
+}
+
+.change_btn {
+    background: url(../img/newtRE2.png);
+    background-size: cover;
+    position: absolute;
+    top: 67.5%;
+    left: 80.7%;
+    cursor: pointer;
+}
+
+.close_btn {
+    background: url(../img/x.svg);
+    background-size: cover;
+    position: absolute;
+    top: 89.8%;
+    left: 94.8%;
+    cursor: pointer;
+}
+
+.useteach {
+    background: url(../img/btS.svg);
+    background-size: cover;
+    position: absolute;
+    top: 89.8%;
+    left: 80%;
+    cursor: pointer;
+}
+
+.countpic {
+    background: url(../img/newbox3.svg);
+    background-size: cover;
+    position: absolute;
+    top: 80.5%;
+    left: 64.8%;
+}
+
+.delete_btn {
+    background: url(../img/newbox4.svg);
+    background-size: cover;
+    position: absolute;
+    top: 81.4%;
+    cursor: pointer;
+    left: 74.6%;
+}
+
+.openorclosecount_btn {
+    background: url(../img/newbox3-1.svg);
+    background-size: cover;
+    position: absolute;
+    top: 81.4%;
+    cursor: pointer;
+    left: 65.3%;
+}
+
+.inputarea {
+    background: url(../img/box1.png);
+    background-size: cover;
+    position: absolute;
+}
+
+.inputarea1 {
+    top: 89.5%;
+    left: 11.3%;
+}
+
+.inputarea2 {
+    top: 89.5%;
+    left: 31%;
+}
+
+.inputarea3 {
+    top: 89.5%;
+    left: 43.2%;
+}
+
+.inputarea4 {
+    top: 89.5%;
+    left: 55.5%;
+}
+
+.arrow {
+    background: url(../img/box2.png);
+    background-size: cover;
+    position: absolute;
+    cursor: pointer;
+}
+
+.arrow1 {
+    top: 93%;
+    left: 17.6%;
+}
+
+.arrow2 {
+    top: 93%;
+    left: 37.3%;
+}
+
+.arrow3 {
+    top: 93%;
+    left: 49.6%;
+}
+
+.arrow4 {
+    top: 93%;
+    left: 61.8%;
+}
+
+.choosenum {
+    background: url(../img/box5.png);
+    background-size: cover;
+    position: absolute;
+    transform-origin: 50% 100%;
+    transform: scale(0);
+    transition: 0.2s;
+}
+
+.choosenum1 {
+    top: 26%;
+    left: 11.5%;
+}
+
+.choosenum2 {
+    top: 26%;
+    left: 31.2%;
+}
+
+.choosenum3 {
+    top: 26%;
+    left: 43.5%;
+}
+
+.choosenum4 {
+    top: 26%;
+    left: 55.7%;
+}
+
+.img_thd {
+    position: absolute;
+    top: 85%;
+    left: 4.25%;
+}
+
+.img_hun {
+    position: absolute;
+    top: 88.5%;
+    left: 22.1%;
+}
+
+.img_ten {
+    position: absolute;
+    top: 83.5%;
+    left: 40.8%;
+}
+
+.img_one {
+    position: absolute;
+    top: 90.5%;
+    left: 53%;
+}
+
+.img_thd1 {
+    position: absolute;
+    top: 14%;
+    left: 82.95%;
+}
+
+.img_hun1 {
+    position: absolute;
+    top: 33%;
+    left: 82.45%;
+}
+
+.img_ten1 {
+    position: absolute;
+    top: 14.6%;
+    left: 93.25%;
+}
+
+.img_one1 {
+    position: absolute;
+    top: 33.5%;
+    left: 93%;
+}
+
+
+.now_num{
+    font-size: 24px;
+    font-weight: 900;
+    color: #444;
+    position: absolute;
+}
+
+.thd1_num{
+    top: 24%;
+    left: 88%;
+}
+
+.hun1_num{
+    top: 36%;
+    left: 88%;
+}
+.ten1_num{
+    top: 23.6%;
+    left: 94%;
+}
+.one1_num {
+    top: 35.8%;
+    left: 94%;
+}
+
+
+
+
+.numberframe {
+    position: absolute;
+    top: 2%;
+    left: 8%;
+}
+
+.img_block {
+    cursor: pointer;
+}
+.img_block2 {
+    cursor: pointer;
+}
+.numlist {
+    font-family: "微軟正黑體";
+    text-align: center;
+    font-weight: 700;
+    color: #555;
+    cursor: pointer;
+}
+
+.numlist:hover {
+    background: #95C97E;
+    color: #fff;
+}
+
+.dragselected {
+    background: url(../img/tR1.svg);
+    background-size: cover;
+    position: absolute;
+    top: 48.3%;
+    left: 80%;
+}
+
+.selectedframe {
+    /* background: #95C97E; */
+    position: absolute;
+    top: 46.4%;
+    left: 80.8%;
+    pointer-events: none;
+    /* opacity: 0.5; */
+}
+
+.box {
+    position: absolute;
+    top: 46.4%;
+    left: 80.8%;
+    overflow: hidden;
+    cursor: pointer;
+    scroll-snap-type: center;
+}
+
+.img_box {
+    background: url(../img/555.svg);
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s;
+}
+
+.movetopbtn {
+    background: url(../img/tRL.png);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 94%;
+    cursor: pointer;
+}
+
+.movedownbtn {
+    background: url(../img/tRR.png);
+    background-size: cover;
+    position: absolute;
+    top: 59%;
+    left: 94%;
+    cursor: pointer;
+}
+
+.enter_input {
+    font-family: "微軟正黑體";
+    position: absolute;
+    font-weight: 700;
+    background: none;
+    outline: none;
+    border: 0px;
+    text-align: right;
+}
+
+.enter_thd {
+    top: 92%;
+    left: 12.6%;
+    color: #666;
+}
+
+.enter_hrd {
+    top: 92%;
+    left: 32.2%;
+    color: #666;
+}
+
+.enter_ten {
+    top: 92%;
+    left: 44.5%;
+    color: #666;
+}
+
+.enter_one {
+    top: 92%;
+    left: 56.8%;
+    color: #666;
+}
+
+.count {
+    font-family: "微軟正黑體";
+    position: absolute;
+    font-weight: 700;
+    background: none;
+    outline: none;
+    border: 0px;
+    text-align: center;
+    top: 86.0%;
+    left: 67.5%;
+    color: #666;
+}
+
+.mask {
+    position: absolute;
+    top: 0%;
+    background: rgba(102, 102, 102, 0.541);
+    z-index: 99;
+    left: 0%;
+}
+
+.canvas-container {
+    position: absolute;
+    top: 0%;
+    left: 3.2%;
+}
+
+.info {
+    background: url(../img/newwindow.svg);
+    background-size: cover;
+    position: absolute;
+    top: 10%;
+    left: 21%;
+}
+
+.btn_close_inset {
+    background: url(../img/wX.png);
+    background-size: cover;
+    position: absolute;
+    top: 6.5%;
+    left: 91%;
+    cursor: pointer;
+}
+.info-page{
+    background: url(../setpic/page1.svg);
+    background-size: cover;
+    position: absolute;
+    top:2.85%;
+    left: 1.79%;
+}
+.info-btn-left{
+    background: url(../img/wL.png);
+    background-size: cover;
+    position: absolute;
+    top:48%;
+    left: 3.5%;
+
+}
+.info-btn-right{
+    background: url(../img/wR.png);
+    background-size: cover;
+    position: absolute;
+    top:48%;
+    left: 93%;
+}
