@@ -1,0 +1,468 @@
+/*首頁*/
+body{
+	overflow: hidden;;
+	-webkit-user-select: none;   
+	-moz-user-select: none;
+	text-align: -webkit-center;
+	width: 1920px;
+	height: 900px;
+	transform-origin: left top;
+}
+
+
+/*按鈕透明*/
+.btn {
+	background: transparent;
+	border: 0px transparent none;
+	outline: none;
+	z-index: 99999;
+	padding: 0;
+}
+.btn:hover{
+	transform: scale(1.05,1.05);
+	pointer-events: auto; 
+}
+.Delete{
+	position: absolute;
+	top: 8%;
+    left: 86.3%;
+	width: 76px;
+	height: 76px;
+}
+.Question{
+	position: absolute;
+	top: 8%;
+    left: 90.7%;
+	width: 76px;
+	height: 76px;
+}
+.Close{
+	position: absolute;
+	top: 8%;
+    left: 95%;
+	width: 76px;
+	height: 76px;
+}
+.Page_Home {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	overflow: hidden;
+	width: 1920px;
+	height: 900px;
+	z-index: 1;
+	/*display:none;*/
+}
+.Description {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	overflow: hidden;
+	width: 1920px;
+	height: 900px;
+	z-index: 2;
+	background-color: #00000087;
+	display:none;
+}
+.DescriptionImg{
+	position: absolute;
+    top: 8%;
+    left: 19%;
+	width: 1225px;
+	height: 759px;
+	z-index: 3;
+}
+.DescriptionClose{
+	position: absolute;
+    top: 80.5%;
+    left: 77.2%;
+	z-index: 4;
+	width: 80px;
+	height: 79px;
+}
+.DescriptionLeft{
+	position: absolute;
+    top: 44%;
+    left: 14.9%;
+	width: 143px;
+	height: 142px;
+	z-index: 2;
+}
+.DescriptionRight{
+	position: absolute;
+    top: 44%;
+    left: 79.4%;
+	width: 143px;
+	height: 142px;
+	z-index: 2;
+}
+/*數字鍵盤*/
+.SelectNumber{
+	background-image: url(../img/key_bg01.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+
+	position: absolute;
+    top: 14%;
+    left: 5%;
+	z-index: 99999;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+	justify-content: space-evenly;
+	display: none;
+	width: 576px;
+	height: 61px;
+}
+.SelectNumberBig{
+	background-image: url(../img/key_bg02.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+
+	position: absolute;
+    top: 14%;
+    left: 5%;
+	z-index: 99999;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+	justify-content: space-evenly;
+	display: none;
+	width: 676px;
+	height: 61px;
+}
+.toolbar{
+	position: absolute;
+    top: 89.6%;
+	/*top: 86%;*/
+    left: 0%;
+	z-index: 9999;
+	width: 1920px;
+	height: 93px;
+}
+.toolLeft{
+	position: absolute;
+	top: 12%;
+    left: 21%;
+	width: 122px;
+	height: 58px;
+}
+.toolRight{
+	position: absolute;
+    top: 12%;
+    left: 60%;
+	width: 122px;
+	height: 58px;
+}
+.toolSelect{
+	background-image: url(../img/tool.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+
+	position: absolute;
+    top: 6.6%;
+    left: 40.4%;
+
+	width: 340px;
+	height: 78px;
+}
+
+.btnUp{
+	position: absolute;
+	top: 38.1%;
+	left: 6.4%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+input[type="number"]{
+	-moz-appearance: textfield;
+}
+input[type="number"]{
+	border: none;
+	BACKGROUND-COLOR: transparent;
+}
+
+input[type="number"]:focus {
+    outline: transparent auto 0px;
+	font-size: 45px;
+}
+
+.txt{
+	font-family: 微軟正黑體;
+}
+
+.dragLeft{
+	position: absolute;
+	z-index: 999;
+	top:13%;
+	top:60%;
+	display: none;
+	
+}
+.dragRight{
+	position: absolute;
+	z-index: 999;
+	top:12%;
+	top:80%;
+	Left: 6.7%;
+	display: none;
+}
+.ShowimgRight{
+	/*transform: scaleX(-1);*/
+}
+.Showtxt{
+	color: #fe4847;
+	font-weight: 900; 
+	text-align: center;   
+	font-size: 18px;
+	/*margin-top: -5%;*/
+	/*margin-top: -35%;*/
+}
+.Left{
+	width: 1329px;
+	position: absolute; 
+	top: 50%; 
+	left:-20%;
+	z-index: 9999;
+	text-align: right;
+}
+.Right{
+	width: 1329px;
+	position: absolute; 
+	top: 62%; 
+	left:44%;
+	z-index: 9999;
+	text-align: Left;
+}
+.Chinese{
+    background-image: url(../img/btn03.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+
+
+	position: absolute;
+    top: 7%;
+    left: 60%;
+	display: none;
+	width: 233px;
+	height: 77px;
+ }
+ .Chinese > img{
+    position: absolute;
+    top: 8%;
+    left: 30%;
+ }
+ 
+ .btnSelectPage{
+	background-image: url(../img/btn02.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+	width: 208px;
+	height: 76px;
+
+	position: absolute;
+	top: 8%;
+    left: 28%;
+ }
+ .btnPageUp{
+	position: absolute;
+    top: 23%;
+    left: 72%;
+
+	width: 43px;
+	height: 40px;
+ }
+ .SelectPage{
+	background-image: url(../img/btn02_bar.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+
+	position: absolute;
+	top: -381%;
+    left: 28.2%;
+    z-index: 99999;
+	display: none;
+
+	width: 202px;
+	height: 367px;
+ }
+ .Pagelul{
+	position: absolute;
+	top: 0%;
+    left: 0%;
+	display: flex;
+	flex-direction: column;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    align-items: center;
+
+	width: 202px;
+	height: 367px;
+ }
+ .Pagelul > div{
+	width: 202px;
+	height: 51px;
+}
+
+ .SelectPageD{
+	background-image: url(../img/stage3/btn02_bar2.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+
+	position: absolute;
+	top: -100%;
+    left: 28.2%;
+    z-index: 99999;
+	display: none;
+
+	width: 202px;
+	height: 106px;
+ }
+ .PagelulD{
+	position: absolute;
+	top: 0%;
+    left: 0%;
+	display: flex;
+	flex-direction: column;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    align-items: center;
+
+	width: 202px;
+	height: 106px;
+ }
+ .PagelulD > div{
+	width: 202px;
+	height: 51px;
+}
+.txtPage{
+	color: #003683;
+	font-weight: 500;
+	font-size: 40px;
+
+	width: 100px;
+    height: 59px;
+    position: absolute;
+    top: 12%;
+    left: 15%;
+}
+.Left{
+	pointer-events: none;
+	width: 1422px;
+	height: 64px;
+	
+}
+.Left > div {
+	margin-left: 1.5%;
+	height: 36px;
+}
+.Left > div > img{
+	pointer-events: fill;
+
+}
+.Left  > img{
+	pointer-events: fill;
+}
+
+.Right{
+	pointer-events: none;
+	width: 1422px;
+	height: 64px;
+}
+.Right > div > img{
+	pointer-events: fill;
+}
+.Right  > img{
+	pointer-events: fill;
+}
+
+.Key{
+	width: 42px;
+	height: 43px;
+}
+.KeyDelete{
+	width: 43px;
+	height: 43px;
+}
+.KeyX{
+	width: 42px;
+	height: 42px;
+}
+.Key0000{
+	width: 97px;
+	height: 43px;
+}
+
+.btnSelectType{
+	background-image: url(../img/btn01.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+
+	position: absolute;
+    top: 6.1%;
+    left: 3.4%;
+
+	width: 202px;
+	height: 79px;
+	z-index: 99999999;
+	/*display: none;*/
+}
+.txtSelectType{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 40px;
+    width: 153px;
+    height: 59px;
+    position: absolute;
+    top: 12%;
+    left: 19%;
+}
+.SelectType{
+	background-image: url(../img/btn01_bar.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+
+	position: absolute;
+	top: -219%;
+    left: 3.4%;
+    z-index: 9999999;
+	display: none;
+
+	width: 202px;
+	height: 263px;
+ }
+ .Selectul{
+	position: absolute;
+	top: 0%;
+    left: 0%;
+	display: flex;
+	flex-direction: column;
+    /* justify-content: center; */
+    justify-content: start;
+    align-items: center;
+
+	width: 202px;
+	height: 263px;
+ }
+ .Selectul > div{
+	width: 200px;
+	height: 52px;
+ }
+
+ .square{
+	font-size: 17px;
+    /* margin-top: -51%; */
+    position: absolute;
+    top: 25.7%;
+ }
+
+ .square{
+    top: 126px;
+}
+ /*197 50*/

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>數學小工具小時鐘</title>
+    <link rel="stylesheet" href="css/clock.css">
+    <!-- <script src="js/d3.js"></script> -->
+    <script src="js/d3.js"></script>
+
+</head>
+
+<body>
+    <div class="logo"></div>
+    <div class="background-img"></div>
+    <div class="background">
+
+        <!-- 以下左側電子時鐘 -->
+        <div class="time_box_frame">
+            <div class="time_box display_none">
+                <div class="timeboxsize hour_box" data-value="12" data-hour="true">
+                    <div class="numberhour"></div>
+                    <div class="ten_add addL color">+</div>
+                    <div class="ten_reduce reduceL color">-</div>
+                    <div class="one_add addR color">+</div>
+                    <div class="one_reduce reduceR color">-</div>
+                </div>
+                <div class="timeboxsize min_box" data-value="00" data-min="true">
+                    <div class="numbermin"></div>
+
+                    <div class="ten_add addL color">+</div>
+                    <div class="ten_reduce reduceL color">-</div>
+                    <div class="one_add addR color">+</div>
+                    <div class="one_reduce reduceR color">-</div>
+                </div>
+                <div class="timeboxsize sec_box display_none" data-value="00" data-sec="true">
+                    <div class="numbersec"></div>
+
+                    <div class="ten_add addL color">+</div>
+                    <div class="ten_reduce reduceL color">-</div>
+                    <div class="one_add addR color">+</div>
+                    <div class="one_reduce reduceR color">-</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="whitebox display_none_another"></div>
+
+        <!-- 以下右側按鈕區域 -->
+        <div class="num_clock_btn"></div>
+        <div class="kiseki_btn"></div>
+        <div class="hour_btn"></div>
+        <div class="min_btn"></div>
+        <div class="sec_btn"></div>
+        <div class="backpage_btn"></div>
+        <div class="close_btn"></div>
+        <div class="howtouse"></div>
+        <div class="drawareasec bnn display_none"></div>
+        <div class="drawareahour bnn display_none"></div>
+        <div class="drawareamin bnn display_none"></div>
+        <div class="line"></div>
+
+        <div class="shadow"></div>
+        <div class="clock"></div>
+
+        <div class="sechand display_none"></div>
+
+        <div class="minhand"></div>
+        <div class="hourhand"></div>
+
+        <div class="dot"></div>
+
+        <canvas></canvas>
+
+        <div class="mask display_none">
+            <div class="info">
+                <div class="info-page"></div>
+                <div class="info-btn-left display_none"></div>
+                <div class="info-btn-right display_none"></div>
+                <div class="btn_close_inset "></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- <div class="background1"> </div> -->
+    <script src="infoset.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    
+    <script src="js/clickfunction.js"></script>
+    <script src="js/resize.js"></script>
+
+</body>
+
+</html>

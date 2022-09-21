@@ -1,0 +1,848 @@
+/*首頁*/
+body{
+	overflow: hidden;;
+	-webkit-user-select: none;   
+	-moz-user-select: none;
+}
+
+object{
+	border: 0px;
+}
+.Page_Home {
+	background-image: url(../img/BG.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: relative;
+
+	width: 1920px;
+	height: 900px;
+	overflow: hidden;
+	/*display:none;*/
+}
+.Page_Q{
+	position: absolute;
+	background-color: #000000B3;
+	width: 1920px;
+	height: 900px;
+	overflow: hidden;
+	z-index: 99999;
+	display: none;
+}
+.windows{
+	position: absolute;
+	top: 4%;
+    left: 14%;
+}
+.CloseW{
+	position: absolute;
+	top: 80%;
+    left: 77%;
+	z-index: 999;
+}
+/*按鈕透明*/
+.btn {
+	background: transparent;
+	border: 0px transparent none;
+	outline: none;
+	z-index: 99999;
+	padding: 0;
+	cursor: pointer;
+	
+}
+.btn:hover{
+	transform: scale(1.05,1.05);
+}
+.Bar{
+	background-image: url(../img/bar.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+	top: 56.3%;
+	left: 0%;
+}
+.txtadd01{
+	position: absolute;
+	top: 39%;
+    left: 2.5%;
+}
+.Add01{
+	background-image: url(../img/文字區/add02.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+    top: 13%;
+    left: 29.5%;
+}
+.Add011{
+	background-image: url(../img/文字區/add02_b.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+    top: 13%;
+    left: 29.5%;
+}
+.Add02{
+	background-image: url(../img/文字區/add03.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+	top: 13%;
+    left: 35.5%;
+}
+.Add021{
+	background-image: url(../img/文字區/add03_b.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+	top: 13%;
+    left: 40.1%;
+}
+.AddAns01{
+	background-image: url(../img/文字區/add05.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+    top: 13%;
+	left: 43.5%;
+	display: none;
+}
+
+.AddAns02{
+	background-image: url(../img/文字區/add04.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+    top: 13%;
+	left: 52.7%;
+	display: none;
+}
+
+.Page_Plus{
+	background-image: url(../img/BG.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: relative;
+
+	width: 1920px;
+	height: 900px;
+	overflow: hidden;
+	display:none;
+}
+.btnSelect{
+	background-image: url(../img/bt01.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+	top: 83.2%;
+	left: 4.1%;
+	z-index: 9998;
+}
+.btnChange{
+	background-image: url(../img/bt01-1.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+	position: absolute;
+    top: 4.8%;
+    left: 1.6%;
+}
+.btnPlus{
+	background-image: url(../img/bt01-2.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+	position: absolute;
+    top: 4.8%;
+	left: 47.8%;
+}
+
+.Tool{
+	background-image: url(../img/tool.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+	top: 81.9%;
+    left: 39.6%;
+	z-index: 9998;
+}
+.NowTool{
+	display: block;
+	margin: auto;
+
+}
+.DivNowTool{
+	position: absolute;
+    top: 33%;
+    left: 0%;
+    display: flex;
+    justify-content: flex-start;
+	align-items: center;
+	cursor: pointer;
+}
+.Up{
+	background-image: url(../img/tup.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	/*margin-left: 10%;*/
+	position: absolute;
+    /*top: 49%;*/
+    left: 8%;
+}
+.Plus{
+	background-image: url(../img/plusA.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	/*margin-left: 10%;*/
+	position: absolute;
+    /*top: 49%;*/
+    left: 77%;
+}
+.ToolBar{
+	background-image: url(../img/tbar.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+    top: 50.7%;
+    left: 40%;
+	z-index: 9999;
+	display: none;
+}
+.ToolSelect:hover{
+	background-image: url(../img/tselect.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+.ToolSelect:hover > div{
+	transform: scale(1.05);
+}
+.ToolSelect01{
+	position: absolute;
+    top: 1.8%;
+    left: 4.7%;
+	z-index: 9999;
+}
+.ToolSelect01{
+	display: flex;
+	position: absolute;
+    top: 1.8%;
+    left: 2.5%;
+	z-index: 9999;	
+	cursor: pointer;
+}
+.ToolSelect02{
+	display: flex;
+	position: absolute;
+    top: 21.1%;
+    left: 2.5%;
+	z-index: 9999;
+		cursor: pointer;
+}
+.ToolSelect03{
+	display: flex;
+	position: absolute;	
+	cursor: pointer;
+	top: 40%;
+    left: 2.5%;
+	z-index: 9999;
+}
+.ToolSelect04{
+	display: flex;
+	position: absolute;
+    top: 59.2%;
+    left: 2.5%;
+	z-index: 9999;	
+	cursor: pointer;
+}
+.ToolSelect05{
+	display: flex;
+	position: absolute;
+	top: 78.4%;
+	left: 2.5%;
+	z-index: 9999;
+	cursor: pointer;
+}
+
+.Word01{
+	background-image: url(../img/文字區/word01.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+	position: absolute;
+   /* top: 77%;
+	left: 10%;*/
+	z-index: 9998;
+}
+.WordGroup{
+	/*position: absolute;
+    top: 77%;
+	left: 10%;*/
+	display: flex;
+    align-items: center;
+	/*margin-top: 7%;*/
+	display: none;
+}
+svg{
+	position: absolute;
+}
+.Object{
+	/*position: absolute;
+	top: 9%;
+	left: 0%;*/
+	position: absolute;
+	top: 3%;
+	left: 3%;
+	display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.ObjectP{
+	position: absolute;
+	top: 3%;
+	left: 3%;
+	display: flex;
+    justify-content: flex-start;
+	flex-direction: column;
+   /* align-items: center;*/
+}
+.Graphics{
+	/*position: absolute;
+	top: 9%;
+	left: 18%;*/
+	margin-bottom: 7%;
+	z-index: 9997;
+}
+.Graphics > img{
+	width: 100%;
+}
+.AppleGraphics{
+
+	display: flex;
+	flex-wrap: wrap;  
+	margin-bottom: 4%;
+}
+.AppleGraphics > div{
+	display: flex;
+	flex-wrap: wrap;   
+	flex-direction: column;
+}
+.AppleGraphics > div >div {
+	flex: 1 1 auto;
+}
+.UpDenominator{
+	background-image: url(../img/up.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+	top: -51%;
+    left: 21%;
+}
+.DownDenominator{
+	background-image: url(../img/down.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+	top: 104%;
+    left: 21%;
+}
+.UpMolecular{
+	background-image: url(../img/up.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+    top: -51%;
+    left: 79%;
+}
+.DownMolecular{
+	background-image: url(../img/down.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+    top: 104%;
+    left: 79%;
+}
+.txt{
+	font-family: 微軟正黑體;
+	font-weight: 900;
+}
+.Add01Denominator{
+	position: absolute;
+    top: 56%;
+    left: 7.8%;
+	text-align: center;
+    line-height: 69px;
+}
+.Add01Molecular{
+	position: absolute;
+    top: 1%;
+    left: 7.8%;
+	text-align: center;
+    line-height: 69px;
+}
+.Add02Denominator{
+	position: absolute;
+    top: 56%;
+    left: 38.8%;
+	text-align: center;
+    line-height: 69px;
+}
+.Add02Molecular{
+	position: absolute;
+    top: 1%;
+    left: 38.8%;
+	text-align: center;
+    line-height: 69px;
+}
+.AddAns01Molecular{
+	position: absolute;
+    top: 1%;
+    left: 38.8%;
+	text-align: center;
+    line-height: 69px;
+}
+.AddAns01Denominator{
+	position: absolute;
+    top: 56%;
+    left: 38.8%;
+	text-align: center;
+    line-height: 69px;
+}
+.AddAns022Molecular{
+	position: absolute;
+    top: 29%;
+    left: 21.8%;
+	text-align: center;
+    line-height: 69px;
+}
+.AddAns02Molecular{
+	position: absolute;
+    top: 1%;
+    left: 61.8%;
+	text-align: center;
+    line-height: 69px;
+}
+.AddAns02Denominator{
+	position: absolute;
+    top: 56%;
+    left: 61.8%;
+	text-align: center;
+    line-height: 69px;
+}
+.Ans01Molecular{
+	position: absolute;
+    left: 54%;
+	top: 1.8%;
+    text-align: center;
+}
+.Ans02Denominator{
+	position: absolute;
+
+    left: 69%;
+    top: 54.8%;
+    text-align: center;
+}
+.Ans02Molecular{
+	position: absolute;
+    left: 69%;
+	top: 1.8%;
+    text-align: center;
+}
+.Ans021Molecular{
+	position: absolute;
+    left: 35.5%;
+    top: 30.8%;
+    text-align: center;
+}
+
+.Add012Molecular{
+	position: absolute;
+    left: 0%;
+    top: 28.8%;
+    text-align: center;
+}
+.Add022Molecular{
+	position: absolute;
+    left: 22%;
+    top: 28.8%;
+    text-align: center;
+}
+
+.txtDenominator{
+	position: absolute;
+    top: 1%;
+    left: 17.8%;
+	text-align: center;
+    line-height: 69px;
+}
+.txtMolecular{
+	position: absolute;
+	top: 1%;
+    left: 76%;
+    text-align: center;
+    line-height: 69px;
+}
+.AnsDiv{
+	position: absolute;
+    /*top: 68%;
+	left: 72.2%;*/
+	/*top: -58%;*/
+	/*top: 59.8%;*/
+    left: 63.2%;
+}
+.Ans01{
+	background-image: url(../img/文字區/word02.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	display: none;
+}
+.Ans02{
+	background-image: url(../img/文字區/word03.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	display: none;
+
+}
+.Ans03{
+	background-image: url(../img/文字區/word04.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	display: none;
+
+}
+.Ans01Denominator{
+	position: absolute;
+
+	left: 54%;
+    top: 54.8%;
+    text-align: center;
+}
+
+.Ans01Molecular{
+	position: absolute;
+    left: 54%;
+	top: 1.8%;
+    text-align: center;
+}
+.Ans02Denominator{
+	position: absolute;
+
+    left: 69%;
+    top: 54.8%;
+    text-align: center;
+}
+.Ans02Molecular{
+	position: absolute;
+    left: 69%;
+	top: 1.8%;
+    text-align: center;
+}
+.Ans021Molecular{
+	position: absolute;
+    left: 35.5%;
+    top: 30.8%;
+    text-align: center;
+}
+.Ans03Denominator{
+	position: absolute;
+	left: 24.2%;
+	top: 54.8%;
+    text-align: center;
+}
+.Ans03Molecular{
+	position: absolute;
+    left: 24.2%;
+    top: 1.8%;
+    text-align: center;
+}
+
+.Ans031Denominator{
+	position: absolute;
+	left: 79.3%;
+	top: 54.8%;
+    text-align: center;
+}
+.Ans031Molecular{
+	position: absolute;
+    left: 79.3%;
+    top: 1.8%;
+    text-align: center;
+}
+.Ans032Molecular{
+	position: absolute;
+    left: 57.5%;
+    top: 30.8%;
+    text-align: center;
+}
+.Apple{
+	background-image: url(../img/t1.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	display: block;
+    margin: auto;
+}
+.Square{
+	background-image: url(../img/t4.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	display: block;
+    margin: auto;
+}
+
+.Triangle{
+	background-image: url(../img/t3.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	display: block;
+    margin: auto;
+}
+.Rectangle{
+	background-image: url(../img/t2.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	display: block;
+    margin: auto;
+}
+.Circle{
+	background-image: url(../img/t5.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	display: block;
+    margin: auto;
+}
+.Dlete{
+	background-image: url(../img/delete.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+	left: 82.5%;
+	top: 88.8%;
+	z-index: 9998;
+}
+.Question{
+	background-image: url(../img/question.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+	left: 88%;
+	top: 88.8%;
+	z-index: 9998;
+}
+.Close{
+	background-image: url(../img/X.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+    left: 93.5%;
+	top: 88.8%;
+	z-index: 9998;
+}
+.ShowFraction{
+	/*background-image: url(../img/bt02.png);
+	background-repeat: no-repeat;
+	background-size:cover;*/
+	position: absolute;
+    left: 57.5%;
+	top: 82.3%;
+	z-index: 9998;
+}
+.ShowFraction2{
+	position: absolute;
+    left: 57.5%;
+	top: 82.3%;
+	z-index: 9998;
+}
+.Fraction01P{
+	position: absolute;
+    left: 23.5%;
+	top: -3.9%;
+	z-index: 999;
+}
+.Fraction02P{
+	position: absolute;
+	left: 56.8%;
+	top: -3.9%;
+	z-index: 999;
+	opacity: 0;
+}
+
+.DivFraction2{
+	background-image: url(../img/bt03.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+	left: 61.7%;
+	top: 83.3%;
+	/*display: none;*/
+}
+.DivFraction{
+	background-image: url(../img/bt02-1.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+	left: 59.7%;
+	top: 83.3%;
+	display: none;
+}
+.Fraction01{
+	position: absolute;
+	left: 33%;
+	top: 8%;
+	z-index: 999;
+}
+
+.Fraction02{
+	position: absolute;
+    left: 67%;
+	top: 8%;
+	z-index: 999;
+}
+.block2{
+	position: absolute;
+	left: 66%;
+    top: 0%;
+    background-color: white;
+    width: 75px;
+    height: 123px;
+	z-index: 999;
+	display: none;
+}
+.block3{
+	position: absolute;
+    left: 78%;
+    top: 0%;
+    background-color: white;
+    width: 75px;
+    height: 123px;
+	z-index: 999;
+	display: none;
+}
+.blockP3{
+	position: absolute;
+    left: 58%;
+    top: 0%;
+    background-color:  #ffe0d0;
+    width: 75px;
+    height: 123px;
+	z-index: 999;
+	display: none;
+}
+.RemoveBlock{
+	position: absolute;
+    left: 0%;
+	top: 79.4%;
+	width: 1920px;
+	height: 184px;
+	background-color: transparent;
+	z-index: 0;
+
+}
+.Add011Molecular{
+	position: absolute;
+
+    left: 51%;
+    top: 0%;
+    text-align: center;
+}
+.Add011Denominator{
+	position: absolute;
+
+    left: 51%;
+    top: 54.8%;
+    text-align: center;
+}
+
+.Add021Molecular{
+	position: absolute;
+
+    left: 62%;
+    top: 0%;
+    text-align: center;
+}
+.Add021Denominator{
+	position: absolute;
+
+    left: 62%;
+    top: 54.8%;
+    text-align: center;
+}
+.Anstype02{
+	display: none;
+}
+.blockP11{
+	position: absolute;
+    left: 45%;
+    top: 0%;
+    background-color:  #ffe0d0;
+    width: 75px;
+    height: 123px;
+	z-index: 999;
+	display: none;
+}
+.blockP21{
+	position: absolute;
+    left: 58%;
+    top: 0%;
+    background-color:  #ffe0d0;
+    width: 75px;
+    height: 123px;
+	z-index: 999;
+	display: none;
+}
+
+.AddAns01P {
+	background-image: url(../img/文字區/add05_b.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+    top: 13%;
+	left: 43.5%;
+	display: none;
+}
+
+.AddAns02P{
+	background-image: url(../img/文字區/add04_b.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+    top: 13%;
+	left: 52.7%;
+	display: none;
+}
+
+.AddAns01MolecularP{
+	position: absolute;
+    top: 1%;
+    left: 35.8%;
+	text-align: center;
+    line-height: 69px;
+}
+.AddAns01DenominatorP{
+	position: absolute;
+    top: 56%;
+    left: 35.8%;
+	text-align: center;
+    line-height: 69px;
+}
+
+.AddAns022MolecularP {
+    position: absolute;
+    top: 29%;
+    left: 19.5%;
+    text-align: center;
+    line-height: 69px;
+}
+.AddAns02MolecularP {
+    position: absolute;
+    top: 1%;
+    left: 57.8%;
+    text-align: center;
+    line-height: 69px;
+}
+.AddAns02DenominatorP {
+    position: absolute;
+    top: 56%;
+    left: 57.8%;
+    text-align: center;
+    line-height: 69px;
+}
+.blockP3 {
+    left: 53%;
+}

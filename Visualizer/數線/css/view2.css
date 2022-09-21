@@ -1,0 +1,58 @@
+.Page_Home {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	overflow: hidden;
+	width: 1920px;
+	height: 900px;
+
+	background-image: url(../img/BG.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	/*display:none;*/
+}
+.divScaleSelect{
+	background-image: url(../img/btn02_2.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+	position: absolute;
+	top: 0.6%;
+    left: 36.5%;
+    width: 261px;
+    height: 858px;
+    z-index: 99;
+	display: flex;
+	flex-direction:column;
+	display: none;
+}
+.imgScale0_5{
+	background:transparent url(../img/btn02_2.png) no-repeat scroll -5px -5px;
+}
+.imgScale0_4{
+	background:transparent url(../img/btn02_2.png) no-repeat scroll -5px -100px;
+}
+.imgScale0_3{
+	background:transparent url(../img/btn02_2.png) no-repeat scroll -5px -195px;
+}
+.imgScale0_2{
+	background:transparent url(../img/btn02_2.png) no-repeat scroll -5px -290px;
+}
+.imgScale0_1{
+	background:transparent url(../img/btn02_2.png) no-repeat scroll -5px -385px;
+}
+.imgScale0_05{
+	background:transparent url(../img/btn02_2.png) no-repeat scroll -5px -480px;
+}
+.imgScale0_01{
+	background:transparent url(../img/btn02_2.png) no-repeat scroll -5px -575px;
+}
+.imgScale0_005{
+	background:transparent url(../img/btn02_2.png) no-repeat scroll -5px -670px;
+}
+.imgScale0_001{
+	background:transparent url(../img/btn02_2.png) no-repeat scroll -5px -765px;
+}
+.imgUnit{
+	left: 18.2%;
+}

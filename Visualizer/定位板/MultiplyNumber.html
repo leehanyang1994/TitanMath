@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport"
+		content="width=device-width, minimal-ui, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<title>數學工具-定位版</title>
+	<link rel="icon" href="nanigame.ico">
+	<link rel="stylesheet" href="css/view.css" />
+	<link rel="stylesheet" href="css/MultiplyNumber.css" />
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/Setting.js"></script>
+
+
+	
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<script type="text/javascript" src="js/Setting.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="js/view.js"></script>
+	<script type="text/javascript" src="js/linq.js"></script>
+	<script type="text/javascript" src="js/ConverNumber.js"></script>
+	<script type="text/javascript" src="js/DragNumberTool.js"></script>
+
+	<script type="text/javascript" src="js/resize_new.js"></script>
+	<script type="text/javascript" src="js/MultiplyNumber.js"></script>
+	<style>
+
+	</style>
+</head>
+
+<body style="margin: 0px;padding: 0px;height:100%;width:100%">
+	<audio id="audio1" src=""> </audio>
+
+	<div class="Description">
+		<img class="DescriptionImg" src="./img/window/window04.png">
+		<img class="btn DescriptionClose" src="./img/window/window_X.png">
+		<img class="btn DescriptionLeft" src="./img/window/window_left.png">
+		<img class="btn DescriptionRight" src="./img/window/window_right.png">
+	 </div>
+
+    <div class="Page_Home">
+
+
+		<!--下方Bar-->
+		<div class="toolbar" id="toolbar">
+			<div class="btn btnSelectType">
+				<div class="txt txtSelectType">乘 法</div>
+				<img class="btn btnUp" src="./img/btn01_up.png">
+			</div>
+
+			<div class="SelectType">
+				<div class="Selectul">
+					<div num = "0"></div>
+					<div num = "1"></div>
+					<div num = "2"></div>
+					<div num = "3"></div>
+
+				</div>
+			</div>
+	
+			<div class="SelectPage">
+				<div class="Pagelul">
+					<div num = "0"></div>
+					<div num = "1"></div>
+					<div num = "2"></div>
+					<div num = "3"></div>
+					<div num = "4"></div>
+					<div num = "5"></div>
+					<div num = "6"></div>
+				</div>
+			</div>
+
+
+
+			<div class="Chinese">
+				<img class="btn ChineseTurn" src="./img/btn03_off.png">
+			</div>
+			<img class="btn Delete" src="./img/delete.png">
+			<img class="btn Question"  src="./img/question.png">
+			<img class="btn Close" src="./img/X.png">
+		</div>
+		<!--數字鍵盤-->
+		<div class="SelectNumber">
+			<img class="btn KeyDelete" src="./img/key_delete.png">
+			<img class="btn Key" src="./img/key_0.png">
+			<img class="btn Key" src="./img/key_1.png">
+			<img class="btn Key" src="./img/key_2.png">
+			<img class="btn Key" src="./img/key_3.png">
+			<img class="btn Key" src="./img/key_4.png">
+			<img class="btn Key" src="./img/key_5.png">
+			<img class="btn Key" src="./img/key_6.png">
+			<img class="btn Key" src="./img/key_7.png">
+			<img class="btn Key" src="./img/key_8.png">
+			<img class="btn Key" src="./img/key_9.png">
+			<img class="btn KeyX" src="./img/key_X.png">
+		</div>
+		<div class="SelectNumberBig">
+			<img class="btn KeyDelete" src="./img/key_delete.png">
+			<img class="btn Key" src="./img/key_0.png">
+			<img class="btn Key" src="./img/key_1.png">
+			<img class="btn Key" src="./img/key_2.png">
+			<img class="btn Key" src="./img/key_3.png">
+			<img class="btn Key" src="./img/key_4.png">
+			<img class="btn Key" src="./img/key_5.png">
+			<img class="btn Key" src="./img/key_6.png">
+			<img class="btn Key" src="./img/key_7.png">
+			<img class="btn Key" src="./img/key_8.png">
+			<img class="btn Key" src="./img/key_9.png">
+			<img class="btn Key0000" src="./img/key_0000.png">
+			<img class="btn KeyX" src="./img/key_X.png">
+		</div>
+
+		<!--大數-->
+		<div class="Page_BigNumber">
+			<div class="TypeNumber">
+				<div class="UnitSelect">
+					<img class="btn Million"  src="./img/stage4/icon01_M_off.png"></img>
+					<img class="btn Thousand"  src="./img/stage4/icon01_K_off.png"></img>
+					<img class="btn Hundred" src="./img/stage4/icon01_H_on.png"></img>
+				</div>
+				<div class="Number1">
+					<!--輸入框-->
+					<div class="divinput">
+						<input class="txt" type="number" id="number1" name="number1" min="0" max="9999" num ="1" 
+							onkeydown="Check(this,event)" onkeyup="return CheckBigNumberSum(this,event)">
+					</div>
+						<!--輸入框-->
+					<div class="divinput2">
+						<input class="txt" type="number" id="number2" name="number2" min="0" max="9999" num ="2" 
+						onkeydown="Check(this,event)" onkeyup="return CheckBigNumberSum(this,event)">
+					</div>
+					<!--運算符號-->
+					<img class="Plus" num="1" src="./img/stage4/multiply.png">
+					<!--等號-->
+					<img class="Equal" num="1" src="./img/stage3/equals.png">
+					<!--讀作顯示-->
+					<div class="txt underline"></div>
+				</div>
+
+
+
+	
+				<table class="TypeNumberTable">
+					<thead>
+						<tr>
+							<th class="txt th2 th2_1">千萬</th>
+							<th class="txt th2 th2_1">百萬</th>
+							<th class="txt th2 th2_1">十萬</th>
+							<th class="txt th2">萬</th>
+							<th class="txt th1 th1_1">千</th>
+							<th class="txt th1">百</th>
+							<th class="txt th1">十</th>
+							<th class="txt th1">個</th>
+						</tr>
+					</thead>
+					<tr class="Number1Text">
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td1_1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+					</tr>
+	
+					<tr class="Number2Text">
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td1_1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+					</tr>
+					<tr class="TableLine"></tr>
+					<tr class="Number3Text" >
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td1_1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+					</tr>
+
+					<tr class="Number4Text">
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td1_1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+					</tr>
+
+					<tr class="Number5Text">
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td1_1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+					</tr>
+
+					<tr class="Number6Text">
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td1_1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+					</tr>
+
+					<tr class="Number7Text">
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td1_1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+					</tr>
+					<tr class="Number8Text">
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td2"></td>
+						<td class="txt td1 td1_1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+						<td class="txt td1"></td>
+					</tr>
+				</table>
+
+				
+				<img class="PlusImg" src="./img/stage4/multiply.png">
+				<!--答案-->
+				<div class="Answer">
+					<img class="btn Ans" src="./img/stage3/ans.png">
+					<img class="btn AnsUp"  src="./img/stage3/ans_upB.png">
+					<img class="btn AnsDown"  src="./img/stage3/ans_downB.png">
+				</div>
+
+			</div>
+	
+	
+		</div>
+    </div>
+
+	<!--首頁-->
+
+
+</body>
+
+</html>

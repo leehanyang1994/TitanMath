@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, minimal-ui, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>數學小工具-分數版</title>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/view.css" />
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="./js/Setting.js"></script>
+    <script src="./js/canvas2svg.js"></script>
+
+    <script src="./js/DrawScreen.js"></script>
+    <script src="./js/DrawTriangle.js"></script>
+    <script src="./js/DrawSquare.js"></script>
+    <script src="./js/DrawRectangle.js"></script>
+    <script src="./js/DrawApple.js"></script>
+    <script type="text/javascript" src="js/resize.js"></script>
+    <script type="text/javascript" src="js/view.js"></script>
+    <script type="text/javascript" src="js/view2.js"></script>
+    <meta name="viewport"
+        content="width=device-width, minimal-ui, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+</head>
+
+<body style="margin: 0px;padding: 0px;height:100%;width:100%" id="body">
+    <!--首頁-->
+    <div class="Page_Q">
+        <img class="windows" src="./img/window.png">
+        <img class="btn CloseW" src="./img/wX.png">
+    </div>
+    <div class="Page_Home">
+
+
+        <div id="ObjectDiv" style="	display: none;overflow: hidden;">
+            <div class="Object" id="Object1">
+
+                <div class="Graphics" id="Graphics">
+                    <img></img>
+                </div>
+                <div id="AppleGraphics1" class="AppleGraphics">
+
+                </div>
+
+                <div class="WordGroup">
+                    <div class="Word01">
+                        <div class="txt txtDenominator">2</div>
+                        <div class="txt txtMolecular">1</div>
+                        <div class="btn UpDenominator"></div>
+                        <div class="btn DownDenominator"></div>
+                        <div class="btn UpMolecular"></div>
+                        <div class="btn DownMolecular"></div>
+                    </div>
+                    <div class="AnsDiv">
+                        <div class="Ans01">
+                            <div class="txt Ans01Denominator">2</div>
+                            <div class="txt Ans01Molecular">1</div>
+                        </div>
+                        <div class="Ans02">
+                            <div class="block2"></div>
+                            <div class="txt Ans02Denominator">2</div>
+                            <div class="txt Ans02Molecular">1</div>
+                            <div class="txt Ans021Molecular">1</div>
+                        </div>
+                        <div class="Ans03">
+                            <div class="txt Ans03Denominator">2</div>
+                            <div class="txt Ans03Molecular">1</div>
+
+                            <div class="block3"></div>
+                            <div class="txt Ans031Denominator">2</div>
+                            <div class="txt Ans031Molecular">1</div>
+                            <div class="txt Ans032Molecular">1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Object" id="Object2" style="display: none;">
+
+                <div class="Graphics" id="Graphics">
+                    <img></img>
+                </div>
+                <div id="AppleGraphics2" class="AppleGraphics">
+
+                </div>
+
+                <div class="WordGroup">
+                    <div class="Word01">
+                        <div class="txt txtDenominator">2</div>
+                        <div class="txt txtMolecular">1</div>
+                        <div class="btn UpDenominator"></div>
+                        <div class="btn DownDenominator"></div>
+                        <div class="btn UpMolecular"></div>
+                        <div class="btn DownMolecular"></div>
+                    </div>
+                    <div class="AnsDiv">
+                        <div class="Ans01">
+                            <div class="txt Ans01Denominator">2</div>
+                            <div class="txt Ans01Molecular">1</div>
+                        </div>
+                        <div class="Ans02">
+                            <div class="block2"></div>
+                            <div class="txt Ans02Denominator">2</div>
+                            <div class="txt Ans02Molecular">1</div>
+                            <div class="txt Ans021Molecular">1</div>
+                        </div>
+                        <div class="Ans03">
+                            <div class="txt Ans03Denominator">2</div>
+                            <div class="txt Ans03Molecular">1</div>
+
+                            <div class="block3"></div>
+                            <div class="txt Ans031Denominator">2</div>
+                            <div class="txt Ans031Molecular">1</div>
+                            <div class="txt Ans032Molecular">1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--下方區域-->
+        <div class="RemoveBlock"></div>
+        <div class="btnSelect">
+            <div class="btn btnChange" ></div>
+
+        </div>
+        <div class="Tool">
+
+            <div class="DivNowTool">
+                <div class="btn Up">
+                </div>
+                <img class="NowTool" src="./img/t5.png" />
+                <div class="btn Plus">
+                </div>
+            </div>
+
+        </div>
+        <div class="ToolBar">
+            <div class="ToolSelect ToolSelect01">
+                <div class="Apple"></div>
+            </div>
+            <div class="ToolSelect ToolSelect02">
+                <div class="Rectangle"></div>
+            </div>
+            <div class="ToolSelect ToolSelect03">
+                <div class="Triangle"></div>
+            </div>
+            <div class="ToolSelect ToolSelect04">
+                <div class="Square"></div>
+            </div>
+            <div class="ToolSelect ToolSelect05">
+                <div class="Circle"></div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+        <img class="btn ShowFraction" src="./img/bt02A.png" />
+
+
+        <div class="DivFraction">
+            <img class="btn Fraction01" src="./img/bt02-2A.png" />
+            <img class="btn Fraction02" src="./img/bt02-3B.png" />
+        </div>
+        <div class="btn Dlete">
+        </div>
+        <div class="btn Question">
+        </div>
+        <div class="btn Close">
+        </div>
+    </div>
+    <div class="Page_Plus">
+        <div id="ObjectDiv2" style="overflow: hidden;">
+
+            <div class="ObjectP" id="ObjectP1">
+                <div class="Graphics" id="Graphics" style="margin-bottom: 0%;">
+                    <img></img>
+                </div>
+                <div id="AppleGraphicsP1" class="AppleGraphics" >
+
+                </div>
+
+                
+                <div class="WordGroup">
+                    <div class="Word01">
+                        <div class="txt txtDenominator">2</div>
+                        <div class="txt txtMolecular">1</div>
+                        <div class="btn UpDenominator"></div>
+                        <div class="btn DownDenominator"></div>
+                        <div class="btn UpMolecular"></div>
+                        <div class="btn DownMolecular"></div>
+                    </div>
+                    <div class="AnsDiv">
+                        <div class="Ans01" style="display: block;">
+                            <div class="txt Ans01Denominator">2</div>
+                            <div class="txt Ans01Molecular">1</div>
+                        </div>
+                        <div class="Ans02">
+                            <div class="block2"></div>
+                            <div class="txt Ans02Denominator">2</div>
+                            <div class="txt Ans02Molecular">1</div>
+                            <div class="txt Ans021Molecular">1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ObjectP" id="ObjectP2" style="left: 53%;">
+                <div class="Graphics" id="Graphics" style="margin-bottom: 0%;">
+                    <img></img>
+                </div>
+                <div id="AppleGraphicsP2" class="AppleGraphics" >
+
+                </div>
+                <div class="WordGroup">
+                    <div class="Word01">
+                        <div class="txt txtDenominator">2</div>
+                        <div class="txt txtMolecular">1</div>
+                        <div class="btn UpDenominator"></div>
+                        <div class="btn DownDenominator"></div>
+                        <div class="btn UpMolecular"></div>
+                        <div class="btn DownMolecular"></div>
+                    </div>
+                    <div class="AnsDiv">
+                        <div class="Ans01" style="display: block;">
+                            <div class="txt Ans01Denominator">2</div>
+                            <div class="txt Ans01Molecular">1</div>
+                        </div>
+                        <div class="Ans02">
+                            <div class="block2"></div>
+                            <div class="txt Ans02Denominator">2</div>
+                            <div class="txt Ans02Molecular">1</div>
+                            <div class="txt Ans021Molecular">1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Bar">
+            <img class="txtadd01" src="./img/文字區/add01.png">
+            <div class="Anstype01">
+                <div class="Add01">
+                    <div class="txt Add01Molecular ">1</div>
+                    <div class="txt Add01Denominator">2</div>
+                </div>
+                <div class="Add02">
+                    <div class="txt Add02Molecular">1</div>
+                    <div class="txt Add02Denominator">2</div>
+                </div>
+                <div class="AddAns01 AddAns01P">
+                    <div class="txt AddAns01Molecular AddAns01MolecularP">2</div>
+                    <div class="txt AddAns01Denominator AddAns01DenominatorP">2</div>
+                </div>
+            </div>
+            <div class="Anstype02">
+                <div class="Add011">
+                    <div class="blockP11"></div>
+                    <div class="txt Add011Molecular">1</div>
+                    <div class="txt Add012Molecular">0</div>
+                    <div class="txt Add011Denominator">2</div>
+                </div>
+                <div class="Add021">
+                    <div class="blockP21"></div>
+                    <div class="txt Add021Molecular">1</div>
+                    <div class="txt Add022Molecular">0</div>
+                    <div class="txt Add021Denominator">2</div>
+                </div>
+                <div class="AddAns02 AddAns02P">
+                    <div class="blockP3"></div>
+                    <div class="txt AddAns02Molecular AddAns02MolecularP" >0</div>
+                    <div class="txt AddAns022Molecular AddAns022MolecularP">1</div>
+                    <div class="txt AddAns02Denominator AddAns02DenominatorP">2</div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="btnSelect">
+            <div class="btn btnPlus" ></div>
+
+        </div>
+        <!--教學工具-->
+        <div class="Tool">
+
+            <div class="DivNowTool">
+                <div class="btn Up">
+                </div>
+                <img class="NowTool NowTool2" src="./img/t5.png" />
+                <!--<div class="btn Plus"></div>-->
+            </div>
+
+        </div>
+        <div class="ToolBar">
+            <div class="ToolSelect ToolSelect01">
+                <div class="Apple"></div>
+            </div>
+            <div class="ToolSelect ToolSelect02">
+                <div class="Rectangle"></div>
+            </div>
+            <div class="ToolSelect ToolSelect03">
+                <div class="Triangle"></div>
+            </div>
+            <div class="ToolSelect ToolSelect04">
+                <div class="Square"></div>
+            </div>
+            <div class="ToolSelect ToolSelect05">
+                <div class="Circle"></div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <!--顯示分數-->
+        <img class="btn ShowFraction2" src="./img/bt04A.png" />
+        <div class="DivFraction2">
+            <img class="btn Fraction01P" src="./img/bt03-2.png" />
+            <img class="btn Fraction02P" src="./img/bt03-1.png" />
+        </div>
+        <div class="btn Dlete">
+        </div>
+        <div class="btn Question">
+        </div>
+        <div class="btn Close">
+        </div>
+
+    </div>
+    <canvas id="canvas" width="300" height="300" style="display: none;"></canvas>
+
+
+</html>

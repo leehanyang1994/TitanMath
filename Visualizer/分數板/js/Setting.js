@@ -1,0 +1,39 @@
+var NowObjectId = "1";
+var Settings=[
+    {
+        "Tool":"Circle",
+        "Max":16,
+        "ToolImg":"t5.png",
+        "Width":70,
+        "Height":69
+    },
+    {
+        "Tool":"Square",
+        "Max":8,
+        "ToolImg":"t4.png",
+        "Width":62,
+        "Height":62
+    },
+    {
+        "Tool":"Triangle",
+        "Max":8,
+        "ToolImg":"t3.png",
+        "Width":76,
+        "Height":66
+    },
+    {
+        "Tool":"Rectangle",
+        "Max":16,
+        "ToolImg":"t2.png",
+        "Width":116,
+        "Height":60
+    },
+    {
+        "Tool":"Apple",
+        "Max":12,
+        "ToolImg":"t1.png",
+        "Width":64,
+        "Height":67
+    },
+]
+

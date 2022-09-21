@@ -1,0 +1,425 @@
+/*首頁*/
+body{
+	overflow: hidden;;
+	-webkit-user-select: none;   
+	-moz-user-select: none;
+	text-align: -webkit-center;
+	width: 1920px;
+	height: 900px;
+	transform-origin: left top;
+}
+img{
+	-webkit-user-drag: none;
+}
+/*按鈕透明*/
+.btn {
+	background: transparent;
+	border: 0px transparent none;
+	outline: none;
+	z-index: 99999;
+	padding: 0;
+}
+.btn:hover{
+	transform: scale(1.05,1.05);
+	pointer-events: auto; 
+}
+.Page_Home {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	overflow: hidden;
+	width: 1920px;
+	height: 900px;
+
+	background-image: url(../img/BG_2.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	/*display:none;*/
+}
+.Description {
+	position: absolute;
+    top: 0%;
+    left: 0%;
+	overflow: hidden;
+	width: 1920px;
+	height: 900px;
+	z-index: 99999999;
+	background-color: #00000087;
+	display:none;
+}
+.DescriptionImg{
+	position: absolute;
+    top: 15%;
+    left: 24%;
+	width: 1045px;
+	height: 611px;
+	z-index: 3;
+}
+.DescriptionClose{
+	position: absolute;
+	top: 71.5%;
+    left: 73%;
+	z-index: 4;
+	width: 83px;
+	height: 83px;
+}
+
+.BackLine{
+	width: 1636px;
+	height: 33px;
+	position: absolute;
+	left: 120px;
+	top: 34%;
+	z-index: 1;
+}
+.DrawDiv{
+	width: 1756px;
+	height: 150px;
+	position: absolute;
+    left: 0%;
+    top: 32%;
+	z-index: 2;
+
+}
+.PointClick{
+    width: 1635px;
+    height: 58px;
+    position: absolute;
+    left: 6.8%;
+    top: 25%;
+    z-index: 3;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	 box-sizing:        border-box;
+}
+input[type="number"]{
+	-moz-appearance: textfield;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	 box-sizing:        border-box;
+}
+input[type="number"]{
+	border: none;
+	BACKGROUND-COLOR: transparent;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	 box-sizing:        border-box;
+}
+
+input[type="number"]:focus {
+    outline: transparent auto 0px;
+	outline:none;
+	font-size: 33px;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	 box-sizing:        border-box;
+}
+
+.inputMin{
+    border-style: none;
+    position: absolute;
+    top: 82.7%;
+    left: 23.5%;
+    width: 130px;
+    font-family: 微軟正黑體;
+    font-size: 33px;
+    text-align: center;
+	margin-top: -2.6px;	
+    background-color: transparent;
+}
+
+.inputMax{
+    border-style: none;
+    position: absolute;
+    top: 89.1%;
+    left: 23.5%;
+    width: 130px;
+    font-family: 微軟正黑體;
+    font-size: 33px;
+    text-align: center;
+	margin-top: -2.6px;	
+    background-color: transparent;
+}
+/*刻度單位*/
+.btnScale{
+	position: absolute;
+	top: 85%;
+	left: 36.4%;
+	width: 335px;
+	height: 98px;
+	z-index: 99;
+}
+.btnScaleUp{
+
+	width: 72px;
+	height: 98px;
+	position: absolute;
+    top: 0%;
+	right: 1%;
+}
+.txtScale{
+	background-image: url(../img/btn02_a.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+    top: 0%;
+	left: 0%;
+    width: 263px;
+    height: 98px;
+
+}
+.divScaleSelect{
+	background-image: url(../img/btn02_1.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+	position: absolute;
+	top: 2%;
+    left: 36.5%;
+    width: 262px;
+    height: 763px;
+	z-index: 98;
+	display: flex;
+	flex-direction:column;
+	display: none;
+}
+.divScaleSelect > div{
+    width: 262px;
+    height: 94px;
+	/*border: 1px red solid;*/
+}
+.imgScale{
+	position: absolute;
+	top: 10%;
+	left: 2.2%;
+	width: 250px;
+    height: 80px;
+}
+.imgScale1000{
+	background:transparent url(../img/btn02_1.png) no-repeat scroll -5px -5px;
+}
+.imgScale100{
+	background:transparent url(../img/btn02_1.png) no-repeat scroll -5px -100px;
+}
+.imgScale10{
+	background:transparent url(../img/btn02_1.png) no-repeat scroll -5px -195px;
+}
+.imgScale5{
+	background:transparent url(../img/btn02_1.png) no-repeat scroll -5px -290px;
+}
+.imgScale4{
+	background:transparent url(../img/btn02_1.png) no-repeat scroll -5px -385px;
+}
+.imgScale3{
+	background:transparent url(../img/btn02_1.png) no-repeat scroll -5px -480px;
+}
+.imgScale2{
+	background:transparent url(../img/btn02_1.png) no-repeat scroll -5px -575px;
+}
+.imgScale1{
+	background:transparent url(../img/btn02_1.png) no-repeat scroll -5px -670px;
+}
+.imgUnit{
+    position: absolute;
+    top: 95.3%;
+    left: 20%;
+}
+/*格*/
+.btnGrid{
+	position: absolute;
+    top: 89%;
+    left: 56.8%;
+	width: 148px;
+	height: 64px;
+}
+.btnGridUp{
+
+	width: 60px;
+	height: 64px;
+	position: absolute;
+    top: 0%;
+	right: 2%;
+}
+.txtGrid{
+	background-image: url(../img/btn03_a.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+    top: 0%;
+	left: 0%;
+    width: 88px;
+    height: 64px;
+
+}
+.divGridSelect{
+	background-image: url(../img/btn03_1.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+	position: absolute;
+	top: 20.6%;
+    left: 57%;
+    width: 87px;
+    height: 666px;
+	z-index: 98;
+	display: flex;
+	flex-direction:column;
+	display: none;
+}
+.divGridSelect > div{
+    width: 87px;
+    height: 58.5px;
+	/*border: 1px red solid;*/
+}
+.imgGrid{
+	position: absolute;
+	top: 10%;
+    left: 7.2%;
+    width: 64px;
+    height: 51.5px;
+}
+.imgGrid10{
+	background:transparent url(../img/btn03_1.png) no-repeat scroll -10px -5px;
+}
+.imgGrid9{
+	background:transparent url(../img/btn03_1.png) no-repeat scroll -10px -65px;
+}
+.imgGrid8{
+	background:transparent url(../img/btn03_1.png) no-repeat scroll -10px -125px;
+}
+.imgGrid7{
+	background:transparent url(../img/btn03_1.png) no-repeat scroll -10px -185px;
+}
+.imgGrid6{
+	background:transparent url(../img/btn03_1.png) no-repeat scroll -10px -245px;
+}
+.imgGrid5{
+	background:transparent url(../img/btn03_1.png) no-repeat scroll -10px -305px;
+}
+.imgGrid4{
+	background:transparent url(../img/btn03_1.png) no-repeat scroll -10px -365px;
+}
+.imgGrid3{
+	background:transparent url(../img/btn03_1.png) no-repeat scroll -10px -425px;
+}
+.imgGrid2{
+	background:transparent url(../img/btn03_1.png) no-repeat scroll -10px -485px;
+}
+.imgGrid1{
+	background:transparent url(../img/btn03_1.png) no-repeat scroll -10px -545px;
+}
+/*確定*/
+.btnOK{
+	position: absolute;
+	top: 82.7%;
+    left: 68%;
+    width: 136px;
+    height: 135px;
+}
+/*點座標*/
+.Point{
+	position: absolute;
+	top: 82.7%;
+    left: 77%;
+    width: 156px;
+    height: 69px;
+}
+/*數線座標*/
+.NLine{
+	position: absolute;
+	top: 91.4%;
+    left: 77%;
+    width: 156px;
+    height: 69px;
+}
+.Re{
+	position: absolute;
+    top: 90.3%;
+    left: 90.5%;
+    width: 79px;
+    height: 78px;
+}
+.Memo{
+	position: absolute;
+	top: 80.7%;
+    left: 95%;
+    width: 79px;
+    height: 78px;
+}
+.Close{
+	position: absolute;
+    top: 90.3%;
+    left: 95%;
+    width: 79px;
+    height: 78px;
+}
+
+
+.btnType{
+	position: absolute;
+	top: 85%;
+	left: 1.4%;
+	width: 255px;
+	height: 80px;
+	z-index: 99;
+}
+.imgType{
+	position: absolute;
+	top: 14%;
+	left: 2.2%;
+	width: 161px;
+    height: 59px;
+}
+.txtType{
+	background-image: url(../img/btn01_a.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+    top: 0%;
+	left: 0%;
+    width: 175px;
+    height: 80px;
+
+}
+.imgType3{
+	background:transparent url(../img/btn01_1.png) no-repeat scroll -5px -2px;
+}
+.imgType2{
+	background:transparent url(../img/btn01_1.png) no-repeat scroll -5px -64px;
+}
+.imgType1{
+	background:transparent url(../img/btn01_1.png) no-repeat scroll -5px -126px;
+}
+.btnTypeUp{
+
+	width: 80px;
+	height: 80px;
+	position: absolute;
+    top: 0%;
+	right: 1%;
+}
+
+.divTypeSelect{
+	background-image: url(../img/btn01_1.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+	position: absolute;
+    top: 63%;
+    left: 1.5%;
+    width: 174px;
+    height: 231px;
+	z-index: 98;
+	display: flex;
+	flex-direction:column;
+	display: none;
+}
+.divTypeSelect > div{
+    width: 174px;
+    height: 61px;
+	/*border: 1px red solid;*/
+}

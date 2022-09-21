@@ -1,0 +1,59 @@
+.Page_Home {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	overflow: hidden;
+	width: 1920px;
+	height: 900px;
+
+	background-image: url(../img/BG.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	/*display:none;*/
+}
+.divScaleSelect{
+	background-image: url(../img/btn02_3.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+	position: absolute;
+	top: 0.6%;
+    left: 36.5%;
+    width: 261px;
+    height: 858px;
+    z-index: 99;
+	display: flex;
+	flex-direction:column;
+	display: none;
+}
+.divScaleSelect > div {
+    width: 261px;
+    height: 93px;
+}
+.imgScale2{
+	background:transparent url(../img/btn02_3.png) no-repeat scroll -5px -10px;
+}
+.imgScale3{
+	background:transparent url(../img/btn02_3.png) no-repeat scroll -5px -106px;
+}
+.imgScale4{
+	background:transparent url(../img/btn02_3.png) no-repeat scroll -5px -202px;
+}
+.imgScale5{
+	background:transparent url(../img/btn02_3.png) no-repeat scroll -5px -298px;
+}
+.imgScale6{
+	background:transparent url(../img/btn02_3.png) no-repeat scroll -5px -392px;
+}
+.imgScale7{
+	background:transparent url(../img/btn02_3.png) no-repeat scroll -5px -486px;
+}
+.imgScale8{
+	background:transparent url(../img/btn02_3.png) no-repeat scroll -5px -583px;
+}
+.imgScale9{
+	background:transparent url(../img/btn02_3.png) no-repeat scroll -5px -676px;
+}
+.imgScale10{
+	background:transparent url(../img/btn02_3.png) no-repeat scroll -5px -773px;
+}

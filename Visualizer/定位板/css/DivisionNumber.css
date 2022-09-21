@@ -1,0 +1,267 @@
+.Page_Number {
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: relative;
+
+	width: 1920px;
+	height: 900px;
+	overflow: hidden;
+	/*display:none;*/
+}
+
+.Page_Number > .TypeNumber {
+	position: absolute;
+    left: 8%;
+    top: 3%;
+	z-index: 1;
+    width: 900px;
+    height: 800px;
+    left: 26%;
+}
+.Page_Number > .TypeNumber > .Number1{
+    position: absolute;
+    left: 33.4%;
+    top: 72.3%;
+    width: 900px;
+    height: 69px;
+    left: 6.4%;
+}
+
+.Page_Number > .TypeNumber >  div > .divinput,
+.Page_Number > .TypeNumber >  div > .divinput2{
+	background-image: url(../img/gray01.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+
+
+	position: absolute;
+    top: 0%;
+    left: 4%;
+	text-align: center;
+    align-items: center;
+
+    width: 211px;
+    height: 69px;
+    font-size: 45px;
+}
+.Page_Number > .TypeNumber >  div > .divinput2{
+    left: 37%;
+}
+.Page_Number > .TypeNumber >  div >.Plus{
+	position: absolute;
+    top: 19%;
+    left: 29.2%;
+    width: 47px;
+    height: 42px;
+}
+.Page_Number > .TypeNumber > div > .divinput > input,
+.Page_Number > .TypeNumber > div > .divinput2 > input{
+    width: 110px;
+    height: 69px;
+    font-size: 45px;
+}
+.Page_Number > .TypeNumber > div >.txtTitle{
+	position: absolute;
+    top: 10%;
+	left: 0%;
+	color: #a3a3a3;
+	font-weight: 900;
+	font-size: 45px;
+
+    width: 30px;
+    height: 69px;
+}
+.Page_Number > .TypeNumber > div > .underline{
+    border-bottom-style: solid;
+    border-bottom-color: #868686;
+    position: absolute;
+    top: -8%;
+    left: 70.5%;
+    font-size: 45px;
+    width: 180px;
+    height: 69px;
+    border-bottom-width: 2px;
+ }
+
+ .Page_Number > .TypeNumber > div > .underline2{
+    border-bottom-style: solid;
+    border-bottom-color: #868686;
+    position: absolute;
+    top: -8%;
+    left: 97%;
+    font-size: 45px;
+    width: 180px;
+    height: 69px;
+    border-bottom-width: 2px;
+ }
+.Remainder
+{
+    position: absolute;
+    top: 88%;
+    left: 91.9%;
+    width: 34px;
+    height: 8px;
+}
+ .Page_Number > .TypeNumber > div > .Read{
+     position: absolute;
+     top: 1%;
+     left: 28.5%;
+     width: 114px;
+     height: 68px;
+ }
+ .Page_Number > .TypeNumber > div > .Add{
+     position: absolute;
+     top: 21%;
+     left: 83%;
+     width: 57px;
+     height: 57px;
+ }
+ .Page_Number  > .TypeNumber > .TypeNumberTable{
+     position: absolute;
+     top: -2%;
+     left: 37%;
+     border-spacing: 1px 1px;
+ }
+ .Page_Number > .TypeNumber > .TypeNumberTable > thead > tr > .th1{
+     background-color: #72db72;
+     font-weight: 900;
+     font-size: 38px;
+
+     width: 92px;
+     height: 48px;
+ }
+ .Page_Number  > .TypeNumber > .TypeNumberTable > tbody > tr > .td1,
+.Page_Number  > .TypeNumber > .DivideTable > tbody > tr > .td1
+ {
+
+     background-color: #e7ecff;
+     font-weight: 600;
+     text-align: center;
+     font-size: 34px;
+
+
+ }
+ .Page_Number  > .TypeNumber > .TypeNumberTable > tbody > .Number2Text{
+     /*display: none;*/
+ }
+ .Page_Number  > .TypeNumber > .TypeNumberTable > tbody > .Number3Text{
+    /* display: none;*/
+ }
+ .Page_Number > .TypeNumber > .Number1_1{
+     position: absolute;
+     left: 0%;
+     top: 11%;
+     width: 550px;
+     height: 69px;
+ }
+
+
+ tr,thead {display: block;}
+ th, td { 
+    width: 91px !important;
+    height: 48px !important;
+}
+ tbody { display: block; } 
+
+ .Answer{
+    background-image: url(../img/stage3/ans_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 63%;
+    left: 21.7%;
+    width: 123px;
+    height: 211px;
+    left: -5.3%;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;*/
+ }
+.Ans{
+    width: 84px;
+    height: 87px;
+    margin-top: 13%;
+}
+.AnsUp{
+    margin-top: 3%;
+    width: 84px;
+    height: 39px;
+}
+ .AnsDown{
+    width: 84px;
+    height: 39px;
+ }
+ .Equal{
+    width: 44px;
+    height: 22px;
+    position: absolute;
+    top: 33%;
+    left: 63%;
+ }
+ .Straight{
+    width: 150px;
+    height: 89px;
+    position: absolute;
+    top: 85%;
+    left: 175%;
+
+ }
+ .Red{
+     color: red;
+ }
+ .ShowStraight{
+    position: absolute;
+    left: 70.5%;
+    width: 340px;
+    top: 115%;
+    display: none;
+ }
+ .StraightText{
+    width: 340px;
+    text-align: right;
+    font-size: 40px;
+    height: 47px;
+ }
+ .StraightLine{
+    border-bottom-style: solid;
+    border-bottom-color: #B6B6B6;
+    position: absolute;
+    top: 64.3%;
+    right: -2%;
+    width: 200px;
+    border-bottom-width: 2px;
+ }
+
+ .StraightImg{
+    position: absolute;
+    top: 23.3%;
+    right: 41%;
+    width: 72px;
+    height: 72px;
+    transform: scale(0.45);
+ }
+.DivideLine{
+    position: absolute;
+    top: 11.3%;
+    left: 37%;
+}
+.DivideTable{
+    position: absolute;
+    top: 11%;
+    left: -5.4%;
+}
+
+.TableLine{
+    border-top: 2px solid #a5a4a9;
+    border-spacing: 0px 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    display: none;
+ }
+ .TableLine > td{
+    width: 94px; 
+    height: 0px;
+ }

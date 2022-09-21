@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, minimal-ui, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>數學小工具-秤面圖</title>
+    <link rel="icon" href="nanigame.ico">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/view.css" />
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="./js/Setting.js"></script>
+    <script src="./js/d3.js"></script>
+    <script type="text/javascript" src="./js/dom-to-image.min.js"></script>
+
+
+    <script type="text/javascript" src="js/view.js"></script>
+
+
+
+    <meta name="viewport"
+        content="width=device-width, minimal-ui, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+</head>
+
+<body style="margin: 0px;padding: 0px;height:100%;width:100%" id="body">
+	<div class="DescriptioPage">
+		<img class="DescriptionImg" src="./img/window.png">
+		<img class="btn DescriptionClose" src="./img/window_X.png">
+	 </div>
+    <!--首頁-->
+    <div class="Page_Home">
+        <!--磅秤-->
+        <div class="Content" id="Content">
+            <img class="SVGBG" src="./img/svg/1kg_5g.svg" width="819px" height="819px" style="position: absolute;">
+            <div class="drawareahour bnn display_none">
+
+
+            </div>
+            <img class="dot" src="./img/clock02.png"></img>
+            <img class="pointer" src="./img/clock01.png"></img>
+        </div>
+        <div class="DragContent" id="DragContent">
+
+        </div>
+        <div class="BigShow" id="BigShow">
+            <div class="BigShowContent">
+
+            </div>
+        </div>
+
+        <!--放大按鈕-->
+        <img class="btn Big" src="./img/btn06.png">
+        <!--右方工具列-->
+        <div class="ToolBar">
+            <img class="btn btn_1kg" src="./img/btn01_b.png">
+            <img class="btn btn_3kg" src="./img/btn02_a.png">
+            <img class="btn btn_100kg" src="./img/btn03_a.png">
+            <!--最小刻度-->
+            <img class="imgScale" src="./img/BG_w01.png">
+            <div class="SelectScale">
+                <div class="Scaletxt">5g</div>
+                <img class="btn up" src="./img/tup.png">
+            </div>
+            <div class="SelectScale1KG">
+                <div num="0" txt="10g"></div>
+                <div num="1" txt="5g"></div>
+            </div>
+            <div class="SelectScale3KG">
+                <div num="0" txt="100g"></div>
+                <div num="1" txt="50g"></div>
+                <div num="2" txt="10g"></div>
+            </div>
+            <!--公克-->
+            <div class="unit1">
+                <div class="divinput">
+                    <input class="txt txtinput" type="number" id="number2" name="number2" min="0" max="1000"
+                        onkeydown="Check(this,event)" onkeyup="return CheckNumberSum(this,event,2)">
+                </div>
+                  <!--單位-->
+                <img class="img_g_kg" src="./img/BG_w03.png">
+            </div>
+
+
+            <!--公斤公克-->
+            <div class="unit2">
+                <div class="divinput_1">
+                    <input class="txt txtinput" type="number" id="number1" name="number1" min="0" max="2"
+                        onkeydown="Check(this,event)" onkeyup="return CheckNumberSum(this,event,1)">
+                </div>
+                <!--公斤單位-->
+                 <img class="img_kg" src="./img/BG_w02.png">
+
+                 <div class="divinput_2">
+                    <input class="txt txtinput" type="number" id="number3" name="number3" min="0" max="999"
+                        onkeydown="Check(this,event)" onkeyup="return CheckNumberSum(this,event,3)">
+                </div>
+                  <!--公克單位-->
+                <img class="img_g" src="./img/BG_w03.png">
+            </div>
+
+            <!--指針-->
+            <img class="btn ShowPointer" src="./img/btn04.png">
+            <!--重量-->
+            <img class="btn ShowWeight" src="./img/btn05.png">
+
+            <img class="btn Re" src="./img/btn_delete.png">
+            
+            <img class="btn Description" src="./img/btn_question.png">
+            
+            <img class="btn Close" src="./img/btn_X.png">
+        </div>
+
+        <div class="Block"></div>
+    </div>
+    <script src="./js/magnifier.js"></script>
+    <script src="./js/roate.js"></script>
+    <script type="text/javascript" src="./js/resize.js"></script>
+</body>
+
+</html>

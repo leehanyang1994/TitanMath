@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport"
+		content="width=device-width, minimal-ui, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<title>數學小工具-數線</title>
+	<link rel="icon" href="nanigame.ico">
+	<link rel="stylesheet" href="css/view.css" />
+	<link rel="stylesheet" href="css/view2.css" />
+	<style>
+
+	</style>
+
+</head>
+
+<body style="margin: 0px;padding: 0px;height:100%;width:100%">
+	
+	<div class="Page_Home">
+
+		<div class="Description">
+			<img class="DescriptionImg" src="./img/window.png">
+			<img class="btn DescriptionClose" src="./img/window_X.png">
+		 </div>
+
+		<div class="DrawDiv">
+			<div class="PointClick"></div>
+			<canvas  id="canvas" width="1756" height="350" style="z-index: 2;"></canvas>
+			<img class="BackLine" src="./img/img_line.png">
+		</div>
+
+		<input class="inputMin" type="number" min ="-10000" max="9999" value="0">
+
+		
+		<input class="inputMax" type="number" min ="-9999" max="10000" value="1">
+	    <!--Type-->
+		<div class="btn btnType">
+			<div class="txtType"></div>
+			<div id="imgType" class="imgType imgType2" num="2">				
+			</div>
+			<img class="btnTypeUp" src="./img/btn01_b.png">
+		</div>
+
+		<div class="divTypeSelect">
+			<div num="3"></div>
+			<div num="2" ></div>
+			<div num="1" ></div>
+		</div>
+		<!--刻度單位-->
+		<div class="btn btnScale">
+			<div class="txtScale"></div>
+
+			<div id="imgScale" class="imgScale imgScale0_1" num="0.1">				
+			</div>
+			<img class="btnScaleUp" src="./img/btn02_b.png">
+		</div>
+
+		<img class="imgUnit" src="./img/BG_w02.png">
+
+		<div class="divScaleSelect">
+            <div num="0.5"></div>
+			<div num="0.4"></div>
+			<div num="0.3" ></div>
+			<div num="0.2" ></div>
+			<div num="0.1" ></div>
+			<div num="0.05" ></div>
+			<div num="0.01" ></div>
+			<div num="0.005" ></div>
+			<div num="0.001" ></div>
+		</div>
+		<!--單位格-->
+		<div class="btn btnGrid">
+			<div class="txtGrid">
+
+			</div>
+			<div id="imgGrid" class="imgGrid imgGrid1" num="1"></div>
+			<img class="btnGridUp" src="./img/btn03_b.png">
+		</div>
+
+		<div class="divGridSelect">
+			<div num="10"></div>
+			<div num="9" ></div>
+			<div num="8" ></div>
+			<div num="7" ></div>
+			<div num="6" ></div>
+			<div num="5" ></div>
+			<div num="4" ></div>
+			<div num="3" ></div>
+			<div num="2" ></div>
+			<div num="1" ></div>
+		</div>
+		<!--確定-->
+		<img class="btn btnOK" src="./img/btn04.png">
+		<!--點座標-->
+		<img class="btn Point" src="./img/btn05_b.png">
+	    <!--數線座標-->
+		<img class="btn NLine" src="./img/btn06_a.png">
+		<!--重置-->
+		<img class="btn Re" src="./img/btn_delete.png">
+		<!--說明-->
+		<img class="btn Memo" src="./img/btn_question.png">
+	    <!--Close-->
+		<img class="btn Close" src="./img/btn_X.png">
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/ColorSettingArray.js"></script>
+    <script src="js/fabric.min.js"></script>
+
+    <script src="js/resize.js"></script>
+	<script src="js/line.js"></script>
+
+    <script src="js/view2.js"></script>
+    <!--<script src="js/clickfunction.js"></script>-->
+    <!--<script src="js/append.js"></script>-->
+
+</body>
+
+</html>

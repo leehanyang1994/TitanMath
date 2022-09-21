@@ -1,0 +1,235 @@
+.Page_BigNumber {
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: relative;
+
+	width: 1920px;
+	height: 900px;
+	overflow: hidden;
+	/*display:none;*/
+}
+
+.Page_BigNumber > .TypeNumber {
+	position: absolute;
+	left: 2%;
+    top: 1%;
+	z-index: 1;
+    width: 1800px;
+    height: 800px;
+}
+.Page_BigNumber > .TypeNumber > .Number1{
+	position: absolute;
+	left: 0%;
+	top: 53%;
+    width: 1800px;
+    height: 69px;
+}
+.Page_BigNumber > .TypeNumber > .Number2{
+	position: absolute;
+	left: 0%;
+	top: 65%;
+    width: 1800px;
+    height: 69px;
+	/*display: none;*/
+}
+.Page_BigNumber > .TypeNumber > .Number3{
+	position: absolute;
+	left: 0%;
+	top: 78%;
+    width: 1800px;
+    height: 69px;
+	/*display: none;*/
+}
+.Page_BigNumber > .TypeNumber >  div > .divinput{
+	background-image: url(../img/gray02.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+
+
+	position: absolute;
+    /*top: 63%;
+    left: 13%;*/
+    top: 0%;
+    left: 4%;
+	text-align: center;
+    align-items: center;
+    width: 544px;
+    height: 69px;
+  
+}
+.Page_BigNumber > .TypeNumber >  div > .divinput > input{ 
+    width: 435px;
+    height: 69px;
+    font-size: 45px;
+}
+.Page_BigNumber > .TypeNumber > div >.txtTitle{
+	position: absolute;
+    top: 10%;
+	left: 0%;
+	color: #a3a3a3;
+	font-weight: 900;
+	font-size: 45px;
+
+    width: 30px;
+    height: 69px;
+}
+.Page_BigNumber > .TypeNumber > div > .underline{
+    /* border-bottom: #868686 solid 2px;*/
+     border-bottom-style: solid;
+     border-bottom-color:#868686 ;
+     position: absolute;
+     top: 0%;
+     left: 41.5%;
+     font-size: 45px;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+     width: 1040px;
+     height: 60px;
+ }
+ .Page_BigNumber > .TypeNumber > div > .Read{
+     position: absolute;
+     top: 1%;
+     left: 28.5%;
+     left: 35%;
+
+     width: 114px;
+     height: 68px;
+ }
+ .Page_BigNumber > .TypeNumber > div > .Add{
+     position: absolute;
+     top: 21%;
+     left: 100%;
+
+     width: 57px;
+     height: 57px;
+ }
+ .Page_BigNumber  > .TypeNumber > .TypeNumberTable{
+     position: absolute;
+     top: 0%;
+     left: 4%;
+ }
+ .Page_BigNumber > .TypeNumber > .TypeNumberTable > thead > tr > .th1{
+     background-color: #72db72;
+     font-weight: 900;
+     font-size: 45px;
+     width: 92px;
+     height: 69px;
+ }
+ .Page_BigNumber > .TypeNumber > .TypeNumberTable > thead > tr > .th2{
+    background-color: #ffdf94;
+    font-weight: 900;
+    font-size: 45px;
+}
+.Page_BigNumber > .TypeNumber > .TypeNumberTable > thead > tr > .th2_1{
+    background-color: #ffdf94;
+    font-weight: 900;
+    font-size: 38px;
+}
+.Page_BigNumber > .TypeNumber > .TypeNumberTable > thead > tr > .th3{
+    background-color: #ffbee0;
+    font-weight: 900;
+    font-size: 45px;
+    display: none;
+
+    width: 92px;
+    height: 69px;
+}
+.Page_BigNumber > .TypeNumber > .TypeNumberTable > thead > tr > .th3_1{
+    background-color: #ffbee0;
+    font-weight: 900;
+    font-size: 38px;
+
+}
+.Page_BigNumber > .TypeNumber > .TypeNumberTable > thead > tr > .th4{
+    background-color: #78ebfe;
+    font-weight: 900;
+    font-size: 45px;
+    display: none;
+
+    width: 92px;
+    height: 69px;
+}
+.Page_BigNumber > .TypeNumber > .TypeNumberTable > thead > tr > .th4_1{
+    background-color: #78ebfe;
+    font-weight: 900;
+    font-size: 38px;
+}
+ .Page_BigNumber  > .TypeNumber > .TypeNumberTable > tbody > tr > .td1{
+     background-color: #e7ecff;
+     font-weight: 600;
+     text-align: center;
+     font-size: 45px;
+
+     width: 92px;
+     height: 96px;
+ }
+ .Page_BigNumber  > .TypeNumber > .TypeNumberTable > tbody > tr > .td3{
+     display: none;
+}
+.Page_BigNumber  > .TypeNumber > .TypeNumberTable > tbody > tr > .td4{
+    display: none;
+}
+ .Page_BigNumber  > .TypeNumber > .TypeNumberTable > tbody > .Number2Text{
+     /*display: none;*/
+ }
+ .Page_BigNumber  > .TypeNumber > .TypeNumberTable > tbody > .Number3Text{
+     /*display: none;*/
+ }
+ .Page_BigNumber > .TypeNumber > .Number1_1{
+     position: absolute;
+     left: 0%;
+     top: 11%;
+ }
+ .Page_BigNumber > .TypeNumber > .Number2_1{
+     position: absolute;
+     left: 0%;
+     top: 23%;
+    /* display: none;*/
+ }
+ .Page_BigNumber > .TypeNumber > .Number3_1{
+     position: absolute;
+     left: 0%;
+     top: 36%;
+     /*display: none;*/
+ }
+ .Page_BigNumber > .TypeNumber  > .UnitSelect{
+    background-image: url(../img/icon01_bg.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+
+
+	position: absolute;
+    top: 87.7%;
+    left: 88%;
+
+        
+    width: 240px;
+    height: 89px;
+ }
+ .Page_BigNumber > .TypeNumber  > .UnitSelect > .Trillion{
+	position: absolute;
+    top: 13%;
+    left: 6%;
+    
+    width: 64px;
+    height: 64px;
+ }
+ .Page_BigNumber > .TypeNumber  > .UnitSelect > .Billion{
+	position: absolute;
+    top: 13%;
+    left: 36%;
+        
+    width: 64px;
+    height: 64px;
+ }
+ .Page_BigNumber > .TypeNumber  > .UnitSelect > .Million{
+	position: absolute;
+    top: 13%;
+    left: 66%;
+        
+    width: 64px;
+    height: 64px;
+ }
+
