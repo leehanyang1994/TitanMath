@@ -136,7 +136,7 @@ h1{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
-    height: 500px;
+    height: 1000px;
     padding: 40px 0px;
 }
 
@@ -173,4 +173,4 @@ footer{
 footer p{
     color: white;
     font-size: 20px;
-}
+}//
