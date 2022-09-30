@@ -47,7 +47,7 @@
       </optiongroup>
       <optiongroup name="menuoptions">
         <options>
-          <option name="flow" value="restricted" />
+          <option name="flow" value="free" />
           <option name="wraplistitems" value="true" />
           <option name="tooltips" value="true" />
           <option name="autocollapse" value="true" />
